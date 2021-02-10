@@ -10,13 +10,14 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
 /**
+ * P119
  * @author caojianyi@dxy.cn
  * @date 2020-11-22 21:41
  * @Description springboot aop切面日志添加(切面=切点+通知)
  */
-@Component
+//@Component
+//@Aspect
 @Slf4j
-@Aspect
 public class AopLog {
 
     //aop切面多线程临时变量存放
