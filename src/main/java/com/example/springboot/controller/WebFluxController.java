@@ -12,22 +12,22 @@ import reactor.core.publisher.Mono;
 @RestController
 public class WebFluxController {
 
-    /**
-     * webflux响应式变成
-     * @return
-     */
-    @GetMapping("helloworld")
-    public Mono<String> helloworld(){
-        return Mono.just("This is webflux demo");
-    }
-
-
-    /**
-     * aop切面测试代码
-     * @return
-     */
-    @GetMapping("aoptest")
-    public String aopTest(){
-        return "This is aoptest demo";
-    }
+//    /**
+//     * webflux响应式变成
+//     * @return
+//     */
+//    @GetMapping("/helloworld")
+//    public Mono<String> helloworld(){
+//        return Mono.just("This is webflux demo");
+//    }
+//
+//
+//    /**
+//     * aop切面测试代码
+//     * @return
+//     */
+//    @GetMapping("/aoptest")
+//    public String aopTest(){
+//        return "This is aoptest demo";
+//    }
 }
