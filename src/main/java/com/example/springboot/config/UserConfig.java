@@ -1,6 +1,6 @@
 package com.example.springboot.config;
 
-import com.example.springboot.entity.User;
+import com.example.springboot.entity.ioc.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

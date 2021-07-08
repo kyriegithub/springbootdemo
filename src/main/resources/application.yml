@@ -5,14 +5,16 @@ server:
       timeout: 1800
   tomcat:
     uri-encoding: utf-8
+
   #数据库
+spring:
   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
     name: geek
     url: jdbc:mysql://47.96.103.167:3306/geek?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
     username: geek
     password: 1023@Geek
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
     initialSize: 5
     minIdle: 5
     maxActive: 20

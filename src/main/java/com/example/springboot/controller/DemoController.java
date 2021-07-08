@@ -64,11 +64,4 @@ public class DemoController {
             this.name = name;
         }
     }
-
-
-
-    public static void main(String[] args) {
-        String string="${nickname}${message}${questionUrl}";
-        System.out.println(string.replace("message","医生给你开具了处方，点击即可查看处方并购买药品"));
-    }
 }

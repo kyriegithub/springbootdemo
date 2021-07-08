@@ -1,7 +1,7 @@
 package com.example.springboot;
 
 import com.alibaba.fastjson.JSON;
-import com.example.springboot.entity.User;
+import com.example.springboot.entity.ioc.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
