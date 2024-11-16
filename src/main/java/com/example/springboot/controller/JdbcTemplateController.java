@@ -30,6 +30,6 @@ public class JdbcTemplateController {
     public String updateUser() {
         String sql="INSERT INTO user (id,username,password) VALUE (1,'zhangsan','123456')";
         jdbcTemplate.execute(sql);
-        return "初始化表成功";
+        return "初始化数据记录成功";
     }
 }
