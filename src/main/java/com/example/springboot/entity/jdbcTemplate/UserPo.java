@@ -14,13 +14,13 @@ import java.sql.SQLException;
  * @Description
  */
 @Data
-public class UserPo implements RowMapper {
+public class UserPo implements RowMapper<UserPo> {
     private int id;
     private String username;
     private String password;
 
     @Override
-    public Object mapRow(ResultSet resultSet, int i) throws SQLException {
+    public UserPo mapRow(ResultSet resultSet, int i) throws SQLException {
         UserPo userPo = new UserPo();
         userPo.setId(resultSet.getInt("id"));
         userPo.setUsername(resultSet.getString("username"));
